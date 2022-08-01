@@ -1,19 +1,23 @@
-import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import type { NextPage } from "next";
-import { useRouter } from "next/router";
+import { useDispatch } from 'react-redux'
+import { AnimatePresence } from "framer-motion";
 import {
 	Container,
+	ImageContainer,
+	AboutDetails,
+	Heading,
 	Description,
 	DescriptionAnimation,
-	GetInTouchBtn,
-	Heading,
-} from "../styles/Home.styled";
+	Divider,
+	DescriptionText,
+	LearnMoreBtn,
+} from "../styles/About.styled";
+import { open } from '../app/ModalSlice'
 import { HeadComponent } from "../components";
 
-const Home: NextPage = () => {
-	const router = useRouter();
+const AboutPage = () => {
 	const [word, setWord] = useState<string>("Web");
+	const dispatch = useDispatch()
 
 	useEffect(() => {
 		const timer = setInterval(() => {
@@ -33,15 +37,14 @@ const Home: NextPage = () => {
 	return (
 		<Container
 			className="container"
-			initial={{ opacity: 0, y: 20 }}
-			animate={{ opacity: 1, y: 0 }}
-			exit={{ opacity: 0, y: 20 }}
-			transition={{
-				bounceDamping: 1,
-			}}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			style={{ color: "white" }}
 		>
 			<HeadComponent />
-			<div>
+			<ImageContainer />
+			<AboutDetails>
 				<Heading>
 					Vignesh <span>Kumar</span>
 				</Heading>
@@ -58,20 +61,29 @@ const Home: NextPage = () => {
 					</AnimatePresence>
 					<span>Developer</span>
 				</Description>
-				<GetInTouchBtn
+				<Divider />
+
+				<DescriptionText>
+					My name is <span>Vignesh Kumar L</span>. I am a Front End Developer,
+					and I&apos;m very passionate and dedicated to my work. With 6+ years
+					experience as a professional a Web Developer, I have acquired my
+					skills and knowledge.
+				</DescriptionText>
+
+				<LearnMoreBtn
 					whileTap={{ scale: 0.8 }}
 					whileHover={{
-						color: 'black',
-						backgroundColor: 'white',
-						outline: '1px solid #eb4a4c'
+						color: "black",
+						backgroundColor: "white",
+						outline: "1px solid #eb4a4c",
 					}}
-					onClick={() => router.push("/contact")}
+					onClick={() => dispatch(open())}
 				>
-					Get in Touch
-				</GetInTouchBtn>
-			</div>
+					Learn More
+				</LearnMoreBtn>
+			</AboutDetails>
 		</Container>
 	);
 };
 
-export default Home;
+export default AboutPage;
