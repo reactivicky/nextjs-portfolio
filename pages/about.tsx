@@ -8,7 +8,6 @@ import {
 	Heading,
 	Description,
 	DescriptionAnimation,
-	Divider,
 	DescriptionText,
 	LearnMoreBtn,
 } from "../styles/About.styled";
@@ -61,9 +60,9 @@ const AboutPage = () => {
 					</AnimatePresence>
 					<span>Developer</span>
 				</Description>
-				<Divider />
+				<div className="divider" />
 
-				<DescriptionText>
+				<DescriptionText className="descriptionText">
 					My name is <span>Vignesh Kumar L</span>. I am a Front End Developer,
 					and I&apos;m very passionate and dedicated to my work. With 6+ years
 					experience as a professional a Web Developer, I have acquired my
@@ -71,6 +70,7 @@ const AboutPage = () => {
 				</DescriptionText>
 
 				<LearnMoreBtn
+					className="redBtn"
 					whileTap={{ scale: 0.8 }}
 					whileHover={{
 						color: "black",

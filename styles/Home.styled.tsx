@@ -50,15 +50,4 @@ export const DescriptionAnimation = styled(motion.span)`
   color: white;
 `
 
-export const GetInTouchBtn = styled(motion.button)`
-  padding: 8px 40px;
-  border-radius: 3rem;
-  background-color: #eb4a4c;
-  border: none;
-  color: white;
-  font-size: 1rem;
-
-  @media (min-width: 768px) {
-    padding: 10px 40px;
-  }
-`
+export const GetInTouchBtn = styled(motion.button)``

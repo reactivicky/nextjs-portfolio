@@ -65,35 +65,10 @@ export const DescriptionAnimation = styled(motion.span)`
   color: white;
 `;
 
-export const Divider = styled.div`
-  height: 1px;
-  background-color: hsla(0,0%,100%,.15);
-  margin: 25px 0;
-`
-
 export const DescriptionText = styled.p`
-  line-height: 1.7;
-  letter-spacing: .2px;
-  font-weight: 400;
-  color: #a2a2a2;
-  font-family: 'Mulish', sans-serif;
-	word-wrap: break-word;
-	margin-bottom: 1.875rem;
-
   span {
     color: white;
   }
 `
 
-export const LearnMoreBtn = styled(motion.button)`
-  padding: 8px 40px;
-  border-radius: 3rem;
-  background-color: #eb4a4c;
-  border: none;
-  color: white;
-  font-size: 1rem;
-
-  @media (min-width: 768px) {
-    padding: 10px 40px;
-  }
-`
+export const LearnMoreBtn = styled(motion.button)``
