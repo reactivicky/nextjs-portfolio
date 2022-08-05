@@ -9,30 +9,13 @@ export const ModalContainer = styled(motion.div)`
 	right: 0;
 	left: 0;
 	color: white;
-	height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: auto 0;
-`;
 
-export const CloseBtn = styled(motion.button)`
-	position: absolute;
-	top: 10px;
-	right: 10px;
-  border: 2px solid white;
-  border-radius: 100vw;
-  background-color: transparent;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	svg {
-		display: block;
-
-		path {
-			stroke: white;
-		}
+	@media (min-width: 1400px) {
+		height: 80vh;
 	}
 `;
 
@@ -55,6 +38,38 @@ export const Modal = styled(motion.div)`
 
 	@media (min-width: 1044px) {
 		flex-direction: row;
+		width: 800px;
+		overflow: visible;
+	}
+`;
+
+export const CloseBtn = styled(motion.button)`
+	position: absolute;
+	top: 10px;
+	right: 10px;
+  border: 2px solid white;
+  border-radius: 100vw;
+  background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	svg {
+		display: block;
+
+		path {
+			stroke: white;
+		}
+	}
+
+	@media (min-width: 1044px) {
+		right: -50px;
+		padding: .3rem;
+		
+		svg {
+			height: 25px;
+			width: 25px;
+		}
 	}
 `;
 
@@ -62,6 +77,11 @@ export const LeftSide = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+
+	@media (min-width: 1044px) {
+		flex-grow: 1;
+	}
+	
 `;
 
 export const ImageContainer = styled.div`
@@ -82,8 +102,8 @@ export const Heading = styled.h3`
 	margin-bottom: 5px;
 
 	@media (min-width: 1400px) {
-		font-size: 2.5rem;
-		margin-bottom: 15px;
+		font-size: 1.4rem;
+		margin-bottom: 5px;
 	}
 
 	span {
@@ -122,12 +142,23 @@ export const AddressItem = styled.li`
 	padding: 0.5rem 0;
 	font-size: 0.8rem;
 	color: #a2a2a2;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
 `;
 
 export const DownloadBtn = styled(motion.button)``;
 
 export const RightSide = styled.div`
-	flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	flex-basis: 480px;
+
+	@media (min-width: 1044px) {
+		overflow: auto;
+		flex-grow: 2;
+	}
 `;
 
 export const RightSideSection = styled.section`
@@ -151,15 +182,53 @@ export const DescriptionText = styled.p`
   }
 `
 
-export const QualityServices = styled.ul`
+export const StyledUL = styled.ul`
   list-style: none;
+	margin-bottom: 1.875rem;
 `
 
-export const QualityService = styled.li`
+export const StyledLI = styled.li`
   font-size: .9rem;
   color: #a2a2a2;
   padding: .5rem 0;
 	display: flex;
 	align-items: center;
 	gap: .5rem;
+`
+
+export const TimelineContainer = styled.div`
+	border-left: 1px solid hsla(0,0%,100%,.15);
+	padding-left: 1rem;
+`
+
+export const DateContainer = styled.p`
+	background-color: hsla(0,0%,100%,.05);
+	padding: .5rem 1.5rem;
+	display: inline-block;
+	border-radius: 100vw;
+	font-size: .9rem;
+	color: #a2a2a2;
+	margin-bottom: 1rem;
+	position: relative;
+
+	svg {
+		position: absolute;
+		left: -23px;
+		top: 10px;
+	}
+`
+
+export const InstitutionName = styled.p`
+	font-weight: 600;
+	margin-bottom: .2rem;
+`
+
+export const DegreeName = styled.p`
+	font-size: .9rem;
+	color: #a2a2a2;
+	margin-bottom: 3rem;
+`
+
+export const ExtraMarginDivider = styled.div`
+	margin-bottom: 3rem;
 `
