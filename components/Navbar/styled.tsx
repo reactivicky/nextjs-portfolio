@@ -7,9 +7,10 @@ export const Container = styled(motion.nav)`
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.5rem;
+	margin: 0;
+	
 
 	@media (min-width: 1044px) {
-		width: 60%;
 		margin: auto;
 		padding: 2.5rem 0;
 	}

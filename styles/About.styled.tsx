@@ -13,6 +13,7 @@ export const Container = styled(motion.div)`
 		gap: 4.6875rem;
 		justify-content: center;
 		flex-direction: row;
+		margin: 20vh auto;
 	}
 
 	@media (min-width: 1400px) {
