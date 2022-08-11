@@ -1,4 +1,3 @@
-import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import * as S from "../styles/Portfolio.styled";
