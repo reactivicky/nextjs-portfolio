@@ -110,7 +110,9 @@ const ModalComponent = () => {
 							}}
 							onClick={() => null}
 						>
-							Download CV
+							<a href='/Vignesh-react.pdf' target='_blank' download>
+								Download CV
+							</a>
 						</S.DownloadBtn>
 						<S.CloseBtn
 							whileHover={{ borderRadius: "8px" }}
@@ -217,8 +219,8 @@ const ModalComponent = () => {
 									<FaCircle color="#eb4a4c" />
 									<span>2016 - 2019</span>
 								</S.DateContainer>
-								<S.InstitutionName>Freelance Websites</S.InstitutionName>
-								<S.DegreeName>React Developer (Freelancer)</S.DegreeName>
+								<S.InstitutionName>Sky Global Services</S.InstitutionName>
+								<S.DegreeName>React Developer</S.DegreeName>
 							</S.TimelineContainer>
 						</S.RightSideSection>
 
