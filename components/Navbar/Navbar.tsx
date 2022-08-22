@@ -50,7 +50,7 @@ const Navbar = () => {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 		>
-			<div>Logo</div>
+			<div>Reactivicky</div>
 			<NavList>
 				<NavListComponent setNavToggle={setNavToggle} />
 			</NavList>

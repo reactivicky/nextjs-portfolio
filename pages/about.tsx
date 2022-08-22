@@ -13,6 +13,8 @@ import {
 } from "../styles/About.styled";
 import { open } from '../app/ModalSlice'
 import { HeadComponent } from "../components";
+import Hero from '../public/hero.jpg'
+import Image from "next/image";
 
 const AboutPage = () => {
 	const [word, setWord] = useState<string>("Web");
@@ -42,7 +44,9 @@ const AboutPage = () => {
 			style={{ color: "white" }}
 		>
 			<HeadComponent />
-			<ImageContainer />
+			<ImageContainer>
+				<Image src={Hero} alt="hero" />
+			</ImageContainer>
 			<AboutDetails>
 				<Heading>
 					Vignesh <span>Kumar</span>

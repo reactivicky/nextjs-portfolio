@@ -85,15 +85,26 @@ export const LeftSide = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-	display: flex;
-	justify-content: center;
+	overflow: hidden;
+	border-radius: 100vw;
+	height: 130px;
+	width: 130px;
+	margin: 0 auto;
 
-	> div {
-		background-color: white;
-		border-radius: 100vw;
+	> span {
+		transform: scale(1.3);
+	}
+
+	@media (min-width: 784px) {
+		height: 300px;
+		width: 300px;
+	}
+	
+	@media (min-width: 1044px) {
 		height: 130px;
 		width: 130px;
 	}
+	
 `;
 
 export const Heading = styled.h3`

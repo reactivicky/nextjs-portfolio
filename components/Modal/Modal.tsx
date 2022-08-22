@@ -13,6 +13,8 @@ import { useDispatch } from "react-redux";
 import { close } from "../../app/ModalSlice";
 import HeadComponent from "../HeadComponent";
 import { AnimatePresence } from "framer-motion";
+import Hero from '../../public/hero.jpg'
+import Image from "next/image";
 
 const ModalComponent = () => {
 	const dispatch = useDispatch();
@@ -54,7 +56,7 @@ const ModalComponent = () => {
 				<S.Modal id="modal" layout>
 					<S.LeftSide>
 						<S.ImageContainer>
-							<div />
+							<Image src={Hero} alt="hero" />
 						</S.ImageContainer>
 
 						<S.NameContainer>
