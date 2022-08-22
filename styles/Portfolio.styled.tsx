@@ -38,14 +38,40 @@ export const InnerSlide = styled(motion.div)`
 `
 
 export const Slide = styled.div`
+  cursor: pointer;  
+  position: relative;
+  overflow: hidden;
   height: 300px;
   min-width: 245px;
-  border-radius: .8rem;
-  background-color: white;
-  color: black;
+
+  @media (min-width: 1044px) {
+    
+    min-width: 245px;
+  }
+`
+
+export const ImageContainer = styled(motion.a)`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: .8rem;
+`
+
+export const ImageName = styled(motion.span)`
+  position: absolute;
+  z-index: 1;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  font-size: .9rem;
+  font-weight: 600;
+  padding: .5rem 1rem;
 `
 
 export const BtnContainer = styled.div`
