@@ -30,6 +30,8 @@ export const Heading = styled.h1`
 export const SliderContainer = styled(motion.div)`
   margin-bottom: 2rem;
   overflow: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 `
 
 export const InnerSlide = styled(motion.div)`
