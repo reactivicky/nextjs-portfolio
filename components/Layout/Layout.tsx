@@ -1,4 +1,4 @@
-import { ReactNode, FC, useCallback } from "react";
+import { ReactNode, FC, useCallback, Fragment } from "react";
 import Particles from "react-particles";
 import type { Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
@@ -31,7 +31,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 					{showModal ? (
 						<Modal key="modal" />
 					) : (
-						<div key="others">
+						<Fragment key="others">
 							<Navbar />
 							<MotionMain
 								initial={{ opacity: 0 }}
@@ -40,7 +40,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 							>
 								{children}
 							</MotionMain>
-						</div>
+						</Fragment>
 					)}
 				</AnimatePresence>
 			</Container>

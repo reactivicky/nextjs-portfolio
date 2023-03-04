@@ -20,7 +20,6 @@ a {
 
 .container {
   color: white;
-  margin: 10rem auto;
 }
 
 @media (min-width: 1044px) {
