@@ -14,7 +14,6 @@ export const Container = styled(motion.div)`
 		gap: 4.6875rem;
 		justify-content: center;
 		flex-direction: row;
-		margin: 20vh auto;
 
 		> div {
 			max-width: 22.5rem;

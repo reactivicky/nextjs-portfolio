@@ -13,10 +13,6 @@ export const ModalContainer = styled(motion.div)`
 	align-items: center;
 	justify-content: center;
 	margin: auto 0;
-
-	@media (min-width: 1400px) {
-		height: 80vh;
-	}
 `;
 
 export const ModalBox = styled.div`
@@ -77,11 +73,7 @@ export const LeftSide = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-
-	@media (min-width: 1044px) {
-		flex-grow: 1;
-	}
-	
+	flex-grow: 1;	
 `;
 
 export const ImageContainer = styled.div`

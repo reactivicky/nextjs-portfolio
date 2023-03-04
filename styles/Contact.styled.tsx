@@ -6,7 +6,6 @@ export const Container = styled(motion.div)`
   padding: 1.5rem;
 
   @media (min-width: 1044px) {
-    margin: 20vh auto;
     padding: 0;
   }
 `
