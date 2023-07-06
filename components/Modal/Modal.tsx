@@ -131,7 +131,7 @@ const ModalComponent = () => {
               <S.DescriptionText className="descriptionText">
                 My name is <span>Vignesh Kumar L</span>. I am a Front End
                 Developer, and I&apos;m very passionate and dedicated to my
-                work. With 6+ years experience as a professional a Web
+                work. With 7+ years experience as a professional a Web
                 Developer, I have acquired my skills and knowledge.
               </S.DescriptionText>
             </S.RightSideSection>
@@ -186,26 +186,35 @@ const ModalComponent = () => {
               <S.TimelineContainer>
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
+                  <span>2023 - Present</span>
+                </S.DateContainer>
+                <S.InstitutionName>
+                  Exclusive Resorts (supplied by Entrans)
+                </S.InstitutionName>
+                <S.DegreeName>Senior Software Engineer (Consultant)</S.DegreeName>
+                
+                <S.DateContainer>
+                  <FaCircle color="#eb4a4c" />
                   <span>2021 - 2022</span>
                 </S.DateContainer>
                 <S.InstitutionName>
                   Informa (supplied by Impelsys)
                 </S.InstitutionName>
-                <S.DegreeName>Senior Software Engineer (Remote)</S.DegreeName>
+                <S.DegreeName>Senior Software Engineer</S.DegreeName>
 
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
                   <span>2020 - 2021</span>
                 </S.DateContainer>
                 <S.InstitutionName>LIDO</S.InstitutionName>
-                <S.DegreeName>Senior Software Engineer (Remote)</S.DegreeName>
+                <S.DegreeName>Senior Software Engineer</S.DegreeName>
 
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
                   <span>2020 - 2020</span>
                 </S.DateContainer>
                 <S.InstitutionName>Axelerant</S.InstitutionName>
-                <S.DegreeName>Front End Developer (Remote)</S.DegreeName>
+                <S.DegreeName>Front End Developer</S.DegreeName>
 
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
@@ -214,7 +223,7 @@ const ModalComponent = () => {
                 <S.InstitutionName>
                   Mr Cooper (supplied by TCS)
                 </S.InstitutionName>
-                <S.DegreeName>React Developer (Contract)</S.DegreeName>
+                <S.DegreeName>React Developer (Consultant)</S.DegreeName>
 
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
