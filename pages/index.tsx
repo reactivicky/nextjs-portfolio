@@ -19,7 +19,7 @@ const Home: NextPage = () => {
     const timer = setInterval(() => {
       setWord((prevState) => {
         if (prevState === "Web") {
-          return "React";
+          return "Full Stack";
         }
         return "Web";
       });

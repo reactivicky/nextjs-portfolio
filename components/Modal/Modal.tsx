@@ -129,7 +129,7 @@ const ModalComponent = () => {
               </S.SectionHeading>
               <div className="divider" />
               <S.DescriptionText className="descriptionText">
-                My name is <span>Vignesh Kumar L</span>. I am a Front End
+                My name is <span>Vignesh Kumar L</span>. I am a Full Stack
                 Developer, and I&apos;m very passionate and dedicated to my
                 work. With 7+ years experience as a professional a Web
                 Developer, I have acquired my skills and knowledge.
