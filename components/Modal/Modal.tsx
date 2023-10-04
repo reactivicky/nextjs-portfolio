@@ -109,7 +109,7 @@ const ModalComponent = () => {
               }}
               onClick={() => null}
             >
-              <a href="/Vignesh-react.pdf" target="_blank" download>
+              <a href="/Vignesh-fullstack.pdf" target="_blank" download>
                 Download CV
               </a>
             </S.DownloadBtn>
@@ -191,8 +191,10 @@ const ModalComponent = () => {
                 <S.InstitutionName>
                   Exclusive Resorts (supplied by Entrans)
                 </S.InstitutionName>
-                <S.DegreeName>Senior Software Engineer (Consultant)</S.DegreeName>
-                
+                <S.DegreeName>
+                  Senior Software Engineer (Consultant)
+                </S.DegreeName>
+
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
                   <span>2021 - 2022</span>
