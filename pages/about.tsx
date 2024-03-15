@@ -68,7 +68,7 @@ const AboutPage = () => {
 
         <DescriptionText className="descriptionText">
           My name is <span>Vignesh Kumar L</span>. I am a Full Stack Developer,
-          and I&apos;m very passionate and dedicated to my work. With 7+ years
+          and I&apos;m very passionate and dedicated to my work. With 8+ years
           experience as a professional a Web Developer, I have acquired my
           skills and knowledge.
         </DescriptionText>

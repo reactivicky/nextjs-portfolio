@@ -26,7 +26,7 @@ const ModalComponent = () => {
     "Social Media Design",
     "Shared Web Hosting",
   ];
-  const skills = ["Javascript", "React", "Html", "Css", "NodeJS"];
+  const skills = ["Javascript", "React", "Html", "Css", "NodeJS", "Typescript"];
   const languages = ["English", "Hindi", "Tamil"];
   useEffect(() => {
     const timer = setInterval(() => {
@@ -131,7 +131,7 @@ const ModalComponent = () => {
               <S.DescriptionText className="descriptionText">
                 My name is <span>Vignesh Kumar L</span>. I am a Full Stack
                 Developer, and I&apos;m very passionate and dedicated to my
-                work. With 7+ years experience as a professional a Web
+                work. With 8+ years experience as a professional a Web
                 Developer, I have acquired my skills and knowledge.
               </S.DescriptionText>
             </S.RightSideSection>
@@ -188,44 +188,29 @@ const ModalComponent = () => {
                   <FaCircle color="#eb4a4c" />
                   <span>2023 - Present</span>
                 </S.DateContainer>
-                <S.InstitutionName>
-                  Exclusive Resorts (supplied by Entrans)
-                </S.InstitutionName>
-                <S.DegreeName>
-                  Senior Software Engineer (Consultant)
-                </S.DegreeName>
+                <S.InstitutionName>Samsung Electronics</S.InstitutionName>
+                <S.DegreeName>Nodejs Developer</S.DegreeName>
+
+                <S.DateContainer>
+                  <FaCircle color="#eb4a4c" />
+                  <span>2023 - Sep 2023</span>
+                </S.DateContainer>
+                <S.InstitutionName>Exclusive Resorts</S.InstitutionName>
+                <S.DegreeName>Senior Software Engineer</S.DegreeName>
 
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
                   <span>2021 - 2022</span>
                 </S.DateContainer>
-                <S.InstitutionName>
-                  Informa (supplied by Impelsys)
-                </S.InstitutionName>
+                <S.InstitutionName>Informa</S.InstitutionName>
                 <S.DegreeName>Senior Software Engineer</S.DegreeName>
 
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
-                  <span>2020 - 2021</span>
+                  <span>2019 - 2021</span>
                 </S.DateContainer>
                 <S.InstitutionName>LIDO</S.InstitutionName>
                 <S.DegreeName>Senior Software Engineer</S.DegreeName>
-
-                <S.DateContainer>
-                  <FaCircle color="#eb4a4c" />
-                  <span>2020 - 2020</span>
-                </S.DateContainer>
-                <S.InstitutionName>Axelerant</S.InstitutionName>
-                <S.DegreeName>Front End Developer</S.DegreeName>
-
-                <S.DateContainer>
-                  <FaCircle color="#eb4a4c" />
-                  <span>2019 - 2020</span>
-                </S.DateContainer>
-                <S.InstitutionName>
-                  Mr Cooper (supplied by TCS)
-                </S.InstitutionName>
-                <S.DegreeName>React Developer (Consultant)</S.DegreeName>
 
                 <S.DateContainer>
                   <FaCircle color="#eb4a4c" />
